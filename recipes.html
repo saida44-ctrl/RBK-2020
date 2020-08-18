@@ -6,6 +6,21 @@
 	<title>FAST FOOD</title>
   <img src="cookies.JPG" alt="cookies" width="100" height="100">
 	<meta charset="utf-8"></title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+			
+		$('#saveBtn').click(function () {
+			alert('Your feedback has been sent');
+			console.log($('#user').val())
+
+		});
+
+        });
+    </script>
+    
 </head>
 <body>
 	<article>
@@ -18,6 +33,19 @@
 
 		</ol>
 	</article>
-
+<div class="container">
+  <form action="action_page.html">
+    <div class="row">
+      <div class="col-25">
+        <label for="feedback">
+        	<h2> Feedback</h2>
+      </div>
+       <div class="col-75">
+        <input type="text" id="user" name="user" placeholder="Your name..">
+        <input type="text" id="feedback" name="Feedback" placeholder="Your feedback..">
+        
+        <button type="button" id="saveBtn">Send</button>
+      </div>
+    </div>
 </body>
 </html>
